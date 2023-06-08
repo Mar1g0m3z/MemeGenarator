@@ -11,4 +11,8 @@ client.on('message', (message) => {
   // Handle incoming messages here
 });
 
+client.on('error', (error) => {
+    console.error('An error occurred:', error);
+  });
+
 client.login(process.env.TOKEN);
